@@ -31,6 +31,14 @@ public final class Constants {
         //public static final Translation2d FRONT_LEFT_LOCATION = new Translation2d(1, 1);
     }
 
+    public final class IOConstants {
+        public static final int LEFT_JOYSTICK = 0;
+        public static final int RIGHT_JOYSTICK = 1;
+        public static final int MAIN_CONTROLLER = 2;
+
+        public static final int LED_PORT = 6;
+    }
+
     public static final class Misc {
         public static final int BACK_MOTOR = 41;
     }
@@ -42,6 +50,30 @@ public final class Constants {
         public static final double GR = 12;
         public static final double WHEEL_CIRCUMFERENCE = 6 * Math.PI;
         public static final double INCHES_PER_REVOLUTION = WHEEL_CIRCUMFERENCE / GR;
+    }
+
+    public static final class ShootConstants {
+        public static final int TOP_SHOOTER = 3;
+        public static final int BOT_SHOOTER = 2;
+        public static final double TOP_VALUE = 1;
+        public static final double BOT_VALUE = 1;
+        public static final int ELEVATOR_PORT = 40;
+
+        public static final boolean TESTING = false;
+        public static final double TOP_KS = 0.08763;
+        public static final double TOP_KV = 0.1243;
+        public static final double BOT_KS = 0.062272;
+        public static final double BOT_KV = 0.1256;
+
+        public static final double TOP_kP = 0.001;
+        public static final double BOT_kP = 0.001;
+
+        public static final double BOT_CONSTANT = 3.104;
+        public static final double TOP_CONSTANT = 3.086;
+    /*
+        27 feet - 2200 TOP, 5000 BOT
+    */
+    
     }
 
 }
